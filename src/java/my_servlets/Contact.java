@@ -40,11 +40,11 @@ public class Contact extends HttpServlet {
 		// If the action parameter is null or the map doesn't contain
 		// a page for this action, set the action to the home page
 		if (action == null || !actionMap.containsKey(action))
-			action = "home";
+			action = "/home";
 
 		// Forward to the requested page.
 		
-              response.sendRedirect("/MathSpeech" + actionMap.get(action));
+              response.sendRedirect("." + actionMap.get(action));
 	}
 
 	

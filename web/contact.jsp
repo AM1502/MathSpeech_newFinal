@@ -20,7 +20,7 @@ and open the template in the editor.
         
     <%
      if ((session.getAttribute("Username") == null) || (session.getAttribute("Username") == "")) {
-        response.sendRedirect("login.jsp");
+        response.sendRedirect("./login.jsp");
     }
     %>
 
